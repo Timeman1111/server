@@ -24,6 +24,7 @@ def initateconnect():
             while True:
                 data = conn.recv(1024)
                 data = str(data)
+                print(data)
                 if not data:
                     break
                 if data == 'test':
