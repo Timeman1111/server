@@ -30,7 +30,7 @@ def initateconnect():
                 if not data:
                     break
                 if data == 'test':
-                    conn.sendall(return_int)
+                    conn.sendall(return_int())
                     return
             
             
