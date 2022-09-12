@@ -8,7 +8,7 @@ PORT = 65432  # Port to listen on (non-privileged ports are > 1023)
 
 
 
-def return_int(value):
+def return_int():
     return 1
 
 
