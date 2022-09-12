@@ -16,19 +16,19 @@ def return_int(value):
 
 def initateconnect():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((HOST, PORT))
-    s.listen()
-    conn, addr = s.accept()
-    with conn:
-        print("CONNECTED")
-        while True:
-            data = conn.recv(1024)
-            data = str(data)
-            if not data:
-                break
-               if data == 'test':
-                conn.sendall(return_int)
-                return
+        s.bind((HOST, PORT))
+        s.listen()
+        conn, addr = s.accept()
+        with conn:
+            print("CONNECTED")
+            while True:
+                data = conn.recv(1024)
+                data = str(data)
+                if not data:
+                    break
+                   if data == 'test':
+                    conn.sendall(return_int)
+                    return
             
             
 
