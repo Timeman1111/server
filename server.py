@@ -24,6 +24,8 @@ def initateconnect():
             while True:
                 data = conn.recv(1024)
                 data = str(data)
+                data = data.strip('b')
+                data = data.strip("'")
                 print(data)
                 if not data:
                     break
