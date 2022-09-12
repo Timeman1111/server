@@ -26,12 +26,12 @@ def initateconnect():
                 data = str(data)
                 data = data.strip('b')
                 data = data.strip("'")
-                print(data)
-                if not data:
-                    break
                 if data == 'test':
                     conn.sendall(return_int())
-                    return
+                    continue
+                else:
+                    conn.sendall(bytes("Error",encoding='utf-8'))
+                                  
             
             
 
