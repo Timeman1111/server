@@ -26,7 +26,7 @@ def initateconnect():
                 data = str(data)
                 if not data:
                     break
-                   if data == 'test':
+                if data == 'test':
                     conn.sendall(return_int)
                     return
             
